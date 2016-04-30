@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Arjun Mukherjee</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">Arjun</span> Mukherjee
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Arjun Mukherjee</h1>
+                        <p class="intro-text">Technology, Art, Health, Life </p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Arjun</h2>
+                <p>Hi, My name is Arjun. I'm a Pittsburgh native and senior at the University of Pittsburgh majoring in Computer Science.
+                </p>
+                <p>My interests with technology is particularly placed in the senses. How can creativity, LEDs and speakers create amazing user experiences? In terms of software development, I find myself drawn to creating web and mobile applications.</p>
+                <p>Outside of technology I have interests in making and listening to music, making and watching video/film, DIY projects, riding my scooter, observerving people, enjoying good company, maintaining good health, travel, and finding more interests. </p>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Resume</h2>
+                    <p>I'm currently on the job hunt! Find my most updated resume by clicking on the box below.</p>
+                    <a href="docDownload.php" class="btn btn-default btn-lg">Download Arjun's Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <br><br>
+                <h2>Contact and Links</h2>
+                    <font color="white" id="showName" align="left" hidden>name</font>
+                    <textarea onfocus="clearName(this)"rows="1" cols="50" id="name">Enter your name</textarea>
+                    <font color="white" id="showEmail" align="left" hidden>e-mail</font>
+                    <textarea onfocus="clearEmail(this)" rows="1" cols="50" id="email">Enter your e-mail</textarea>
+                    <font color="white" id="showEmail2" align="left" hidden>confirm email</font>
+                    <textarea onfocus="clearEmail2(this)" rows="1" cols="50" id="emailConfirm">Please confirm e-mail</textarea>
+                    <font color="white" id="showMessage" align="left" hidden>message</font>
+                    <textarea onfocus="clearMessage(this)" rows="4" cols="70" id="message">Enter your message</textarea>
+                    <br>
+                    <button class="btn btn-default" onclick="preProcess()">Submit</button>
+                    <font color="white" id="success"></font>   
+                <br><br><br><br><br>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                    <a href="https://soundcloud.com/blindshot" class="btn btn-default btn-lg"> <span class="network-name">SoundCloud</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/amukher14" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Argeenospleeno" class="btn btn-default btn-lg"> <span class="network-name">YouTube</span></a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    <br><br><br><br>
+    <form action="poll.php" method="post" name="poll">         
+        <p>Passion Poll 1: What's your opinion on the Galaxy s7?</p>
+        <p class="medtxt">
+        <input type="radio" name="galaxy" value="screen"> 5.5in for the edge version? I miss small screens<br>
+        <input type="radio" name="galaxy" value="water"> It's cool they brought back water resistance, without going back to plastic<br>
+        <input type="radio" name="galaxy" value="newDesign"> Would have liked to see bold new design<br>
+        <input type="radio" name="galaxy" value="charging"> Nice to see wireless charging is faster now<br>
+        </p>
+        <input type="submit" class="btn btn-default" name="submit" value="See what other's think">
+    </form>   
+    </section>
+    <footer>
+        <div class="container text-center">
+            <br><br><br><br><br>
+            <p class="smltxt">Copyright &copy; Arjun Mukherjee 2016</p>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/grayscale.js"></script>
+    <script src="js/textProcess.js"></script>
+</body>
+</html>
