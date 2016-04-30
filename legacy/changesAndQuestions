@@ -1,0 +1,31 @@
+What did you change/enhance from part 1?
+1. In the contact forms, the boxes will automatically clear the hint text of what the user should type
+into each feild. 
+
+2. I've added dynamic text box labeling in the contact section. So when the user clicks on a box and
+forgets what they're supposed to type in it (from the hint in the box) they can refer to the label that dynamically appears once they
+click on the field.
+
+3. I've added form pre processing using axaj. This will determine if the emails entered match or not. If not a dialouge will dynamically
+appear once the submit button is pressed. If the email's match then a success text will dynamically appear.
+
+4. The user is no longer redirected to new a page when the submit button is pressed for the contact forms. Instead text appears
+dynamically on the same page as described in 3.
+
+*these changes can be found in the textChange.js file in the js folder.
+
+If there was a third part to the class project, what would you like to implement?
+I would like to probably learn more javacript libraries and frameworks. Otherwise I think the website is a really effective promotional
+page and with the skills I have now I can tackle all kinds of projects
+
+What did you learn between part 1 and part 2?
+Learning about the DOM was really interesting for me. It helped me control elements to a much higher degree than I did before.
+I didn't know how to make anything dynamic on the page before this. Javascript helped me learn about client side processing of info.
+
+What did you like about this project? How could it have been better?
+I liked this project because I gave me a chance to make a pretty impressive website from total scratch. The progession of information
+learned with the class fit well with the project. I remember during the first part I was mad that my text boxs wouldn't automatically
+clear themselves. But now I know how to fix that and more importantly why it fixes it. 
+Altough the promotional page is nice, I wish there actually less freedom in and more guidelines on what we should implement for the page.
+This helps me learn about many topics. However the excersices do a great job of doing this.
+I
